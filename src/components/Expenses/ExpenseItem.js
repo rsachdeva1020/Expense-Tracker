@@ -1,5 +1,5 @@
 
-import "./ExpenseItem.css";
+import "./CSS/ExpenseItem.css";
 
 import "./ExpenseDate.js";
 import ExpenseDate from "./ExpenseDate.js";
