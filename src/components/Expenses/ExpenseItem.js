@@ -4,12 +4,8 @@ import "./CSS/ExpenseItem.css";
 import "./ExpenseDate.js";
 import ExpenseDate from "./ExpenseDate.js";
 
-// const expenseDate = new Date(2021, 2, 28);
-// const expenseTitle = 'Car Insurance';
-// const expenseAmount = 294.67;
-
 function ExpenseItem(props){
-    console.log(props.prop)
+    // console.log(props.prop)
     return(
         <div className="expense-item">
             <ExpenseDate date={props.prop.date}/>

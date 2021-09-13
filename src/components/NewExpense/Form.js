@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
-export default function Form(){
+export default function Form(props){
+
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
     const [enteredDate, setEnteredDate] = useState('')
@@ -9,10 +10,12 @@ export default function Form(){
         event.preventDefault();
 
         const expenseData = {
+            date : new Date(enteredDate),
             title : enteredTitle,
             amount : enteredAmount,
-            date : new Date(enteredDate),
         }
+
+        props.onSaveExpenseData(expenseData);
 
         // clearing input fields
         setEnteredTitle('')
