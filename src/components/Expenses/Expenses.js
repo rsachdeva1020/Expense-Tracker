@@ -1,5 +1,6 @@
 import ExpenseItem from './ExpenseItem'
 import Filter from './Filter'
+import ExpensesChart from "./ExpensesChart";
 
 import React, {useState} from 'react'
 
@@ -17,6 +18,7 @@ export default function Expenses(props) {
     return (
         <div>
             <Filter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+            <ExpensesChart expenses={filteredExpenses}/>
             {filteredExpenses.length > 0 ? filteredExpenses.map(expense => <ExpenseItem key={expense.id} prop={expense}></ExpenseItem>) : <h1>No expenses found in selected year</h1>}            
         </div>
     )
