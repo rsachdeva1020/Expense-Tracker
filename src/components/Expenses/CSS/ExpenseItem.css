@@ -1,16 +1,29 @@
-*{
+.meriClass{
+    background-color: rgba(0, 0, 0, 0.55);
+    color: whitesmoke;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.insideClass{
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* *{
     padding: 0;
     margin: 0;
 }
 
 /* div{
     color: aliceblue;
-} */
+} 
 
 .expense-item{
     display: flex;
     /* width: 100vw; */
-    /* height: 100px; */
+    /* height: 100px; 
     flex-direction: row;
     background-color: gray;
     margin: 15px 0px;
@@ -25,11 +38,11 @@
     padding: 5px 5px;
 }
 .expense-item__price{
-    /* width: 100px; */
+    /* width: 100px; 
     color: white;
     padding: 5px 10px;
     margin: 5px 0px;
     border: 1px solid white;
     border-radius: 10px;
     background-color: purple;
-}
+} */
