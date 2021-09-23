@@ -1,6 +1,7 @@
 // root component
 import React, {useState} from 'react';
 
+import Navbar from './components/Navbar'
 import Expenses from "./components/Expenses/Expenses.js";
 import NewExpense from "./components/NewExpense/NewExpense.js";
 
@@ -29,7 +30,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
+      <Navbar/>
       <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
