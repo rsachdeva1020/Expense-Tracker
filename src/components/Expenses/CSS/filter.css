@@ -1,0 +1,15 @@
+.some_class{
+    color : white;
+    margin-bottom: 10px;
+}
+.some_class label{
+    margin: 0px 10px;
+    font-size: 1.1rem;
+}
+
+.some_class select{
+    border-radius: 4px;
+    padding: 3px 8px;
+    background-color: #eae9e9;
+    /* font-size: 1.1rem; */
+}

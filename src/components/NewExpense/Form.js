@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 
+import './form.css';
+
 export default function Form(props){
 
     const [enteredTitle, setEnteredTitle] = useState('')
@@ -34,6 +36,7 @@ export default function Form(props){
     }
 
     return(
+    <div className="form">
         <form onSubmit={submitHandler}>
             <div>
                 Title : <input type="text" value={enteredTitle} onChange={titleChangeHandler}/>
@@ -49,5 +52,6 @@ export default function Form(props){
                 <button type="submit">Submit </button>
             </div>
         </form>
+    </div>
     )
 }
