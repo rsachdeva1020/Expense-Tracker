@@ -12,6 +12,7 @@
     padding: 4px 10px;
     background-color: #eae9e9;
     color: black;
+    border: 2px solid rgb(39, 23, 23);
 }
 .form button{
     width: 100%;
